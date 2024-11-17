@@ -72,7 +72,7 @@ main {
 .header__header {
   font-size: clamp(0.875rem, 0.677rem + 0.845vi, 1.438rem);
   line-height: clamp(0.875rem, 0.677rem + 0.845vi, 1.438rem);
-  font-weight: var(--content-font-weight);
+  font-weight: var(--accent-font-weight);
   margin-bottom: 22px;
   text-transform: uppercase;
 }
@@ -94,7 +94,7 @@ main {
   border: none;
   position: relative;
   text-transform: uppercase;
-  font-weight: var(--content-font-weight);
+  font-weight: var(--accent-font-weight);
   font-size: 14px;
   line-height: 14px;
   opacity: 100%;
@@ -130,11 +130,6 @@ main {
 .theme-menu__button:enabled:hover {
   cursor: pointer;
   animation: opacity-theme-menu-button 0.3s ease forwards;
-}
-
-.theme-menu__button:enabled:hover {
-  cursor: pointer;
-  animation: hover-theme-menu-button 0.3s ease forwards;
 }
 
 .theme-menu__button:enabled::before {
@@ -202,7 +197,7 @@ main {
 .image-label {
   color: var(--accent-color);
   font-family: var(--accent-font);
-  font-weight: var(--content-font-weight);
+  font-weight: var(--accent-font-weight);
   font-size: 14px;
   line-height: 14px;
   opacity: 50%;
@@ -253,11 +248,6 @@ main {
   transition: box-shadow 0.3s ease-in-out forwards;
 }
 
-.save-button {
-  color: var(--accent-color);
-  transition: color 0.3s ease;
-}
-
 .card__like-button:focus-visible,
 .save-button:focus-visible,
 .dialog__close-button:focus-visible {
@@ -297,7 +287,7 @@ main {
 .button__text,
 .save-button__text {
   font-family: var(--accent-font);
-  font-weight: var(--content-font-weight);
+  font-weight: var(--accent-font-weight);
   line-height: 12.6px;
   font-size: 14px;
   height: fit-content;
@@ -453,11 +443,10 @@ main {
   justify-content: center;
   color: var(--accent-color);
   font-family: var(--accent-font);
-  font-weight: var(--content-font-weight);
   font-size: 14px;
   line-height: 12.6px;
-  inline-size: fit-content;
-  color: var(--accent-color);
+  inline-size: fit-content;  
+  transition: color 0.3s ease;
 }
 
 .save-button__text {
@@ -484,7 +473,7 @@ main {
 
 .dialog__text {
   font-family: var(--accent-font);
-  font-weight: 400;
+  font-weight: var(--accent-font-weight);
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
