@@ -12,3 +12,40 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes active-theme-menu-button {
+  0% {
+    translate: 0;
+  }
+
+  100% {
+    translate: 4px;
+  }
+}
+
+@keyframes heart-is-liked {
+  0% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 125%;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+@keyframes sparkles-is-liked {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}

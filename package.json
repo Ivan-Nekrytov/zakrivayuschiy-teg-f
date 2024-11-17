@@ -1,0 +1,23 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Хелло\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-Nekrytov/zakrivayuschiy-teg-f.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan-Nekrytov/zakrivayuschiy-teg-f/issues"
+  },
+  "homepage": "https://github.com/Ivan-Nekrytov/zakrivayuschiy-teg-f#readme",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.3.3",
+    "stylelint": "^16.10.0"
+  }
+}
