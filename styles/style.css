@@ -244,7 +244,7 @@ main {
   align-items: center;
   background-color: transparent;
   box-shadow: 0 0 0 0 var(--accent-color);
-  color: var(--accent-color);  
+  color: var(--accent-color);
   transition: box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
   z-index: 0;
 }
@@ -291,7 +291,7 @@ main {
 
 .card__like-button:hover,
 .save-button:hover,
-.dialog__close-button:hover{
+.dialog__close-button:hover {
   color: var(--background-color);
 }
 
@@ -488,11 +488,7 @@ main {
   background-color: transparent;
   border: 2px var(--accent-color) solid;
   width: 257px;
-}
-
-.dialog__close-button__text {
   text-transform: uppercase;
-  margin: 10.5px 0;
 }
 
 @media (width >=768px) {
