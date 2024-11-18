@@ -13,8 +13,8 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.*/
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
+  min-width: 320px;
+  min-height: 100dvb;
   font-family: var(--main-font);
   background-image: repeating-linear-gradient(
       0deg,
@@ -46,7 +46,7 @@ main {
 }
 
 .header {
-  inline-size: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -168,7 +168,7 @@ main {
 .section__image {
   object-fit: cover;
   object-position: center;
-  inline-size: 100%;
+  width: 100%;
   z-index: 0;
 }
 
@@ -230,8 +230,8 @@ main {
 }
 
 .card__like-button {
-  inline-size: 130px;
-  block-size: 38px;
+  width: 130px;
+  height: 38px;
 }
 
 .card__like-button,
@@ -243,9 +243,10 @@ main {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  z-index: 0;
   box-shadow: 0 0 0 0 var(--accent-color);
-  transition: box-shadow 0.3s ease-in-out forwards;
+  color: var(--accent-color);  
+  transition: box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
+  z-index: 0;
 }
 
 .card__like-button:focus-visible,
@@ -261,14 +262,13 @@ main {
   content: "";
   position: absolute;
   height: 100%;
-  mix-blend-mode: difference;
   left: 0px;
   top: 0px;
   background-color: var(--accent-color);
   transform-origin: 0px;
   width: 0;
-  transition: width 0.5s ease-in-out;
   z-index: 1;
+  transition: width 0.5s ease-in-out;
 }
 
 .card__like-button:hover::before,
@@ -277,12 +277,6 @@ main {
   width: 100%;
 }
 
-.card__icon-button {
-  background-color: transparent;
-  padding: 0;
-  border: none;
-  outline: none;
-}
 
 .button__text,
 .save-button__text {
@@ -291,16 +285,21 @@ main {
   line-height: 12.6px;
   font-size: 14px;
   height: fit-content;
+  position: relative;
   z-index: 2;
-  color: var(--accent-color);
-  transition: color 0.5s ease-in-out;
 }
 
-.card__like-button:hover .button__text,
+.card__like-button:hover,
 .save-button:hover,
-.save-button:hover .save-button__text,
-.dialog__close-button:hover .dialog__close-button__text {
+.dialog__close-button:hover{
   color: var(--background-color);
+}
+
+.card__icon-button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
 .img-sepia {
@@ -434,19 +433,7 @@ main {
 }
 
 .save-button {
-  position: relative;
   padding: 15px 20px;
-  border: 2px solid var(--accent-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent-color);
-  font-family: var(--accent-font);
-  font-size: 14px;
-  line-height: 12.6px;
-  inline-size: fit-content;  
-  transition: color 0.3s ease;
 }
 
 .save-button__text {
@@ -454,10 +441,10 @@ main {
 }
 
 .floppy {
-  fill: var(--accent-color);
-  inline-size: 28px;
-  block-size: 28px;
-  transition: fill 0.3s ease;
+  position: relative;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
 }
 
 .dialog {
@@ -510,7 +497,7 @@ main {
 
 @media (width >=768px) {
   .header {
-    inline-size: clamp(23.438rem, 16.285rem + 30.516vi, 43.75rem);
+    width: clamp(23.438rem, 16.285rem + 30.516vi, 43.75rem);
   }
 
   .title {
@@ -524,7 +511,7 @@ main {
   }
 
   .section {
-    inline-size: clamp(23.438rem, 16.285rem + 30.516vi, 43.75rem);
+    width: clamp(23.438rem, 16.285rem + 30.516vi, 43.75rem);
   }
 
   .save-button {
