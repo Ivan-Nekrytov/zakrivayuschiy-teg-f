@@ -159,7 +159,7 @@ main {
 }
 
 .section__header {
-  font-variation-settings: var(--header-font-weight);
+  font-variation-settings: "wght" var(--header-font-weight);
   font-size: 18px;
   line-height: 21.78px;
   padding: 3.5px 10px 5.5px;
@@ -180,7 +180,7 @@ main {
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: var(--content-font-weight);
+  font-variation-settings: "wght" var(--content-font-weight);
 }
 
 .section__text:first-child {
