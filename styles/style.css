@@ -455,7 +455,7 @@ main {
 }
 
 .dialog[open] {
-  display: block;
+  display: flex;
 }
 
 .dialog::backdrop {
