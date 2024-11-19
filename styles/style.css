@@ -452,15 +452,10 @@ main {
   background-color: var(--background-color);
   color: var(--accent-color);
   border: 2px var(--accent-color) solid;
-  display: none;
 }
 
 .dialog[open] {
   display: block;
-}
-
-.dialog:not([open]) {
-  display: none;
 }
 
 .dialog::backdrop {
