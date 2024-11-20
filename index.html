@@ -17,22 +17,7 @@
   <link rel="apple-touch-icon" href="./images/mobile_icon.png">
 </head>
 
-<body class="page">
-  <dialog id="dialog-id" class="dialog">
-    <div class="dialog__container">
-      <svg class="floppy" fill="currentColor">
-        <use href="#floppy"></use>
-      </svg>
-      <span class="dialog__text">Вставьте <br /> дискету, чтобы<br /> продолжить</span>
-    </div>
-    <form method="dialog" class="dialog-form">
-    <button class="dialog__close-button button" type="button" onclick="window['dialog-id'].close();">
-      <span class="button__text dialog__close-button__text">
-        ок
-      </span>
-    </button>
-    </form>
-  </dialog>
+<body class="page">  
   <header class="header">
     <span class="title">
       &lt;/html&gt;
@@ -439,6 +424,19 @@
       v-8.6h15V19.4z M25.9,6.5v19.4h-2.2V15.1H4.3v10.8H2.2V2.1h2.2v8.6h17.2V2.1h2.1v2.2h2.2L25.9,6.5z" />
     </symbol>
   </svg>
+  <dialog id="dialog-id" class="dialog">
+    <div class="dialog__container">
+      <svg class="floppy" fill="currentColor">
+        <use href="#floppy"></use>
+      </svg>
+      <span class="dialog__text">Вставьте <br /> дискету, чтобы<br /> продолжить</span>
+    </div>
+    <button class="dialog__close-button button" type="button" onclick="window['dialog-id'].close();">
+      <span class="button__text dialog__close-button__text">
+        ок
+      </span>
+    </button>
+  </dialog>
 </body>
 </html>
 
