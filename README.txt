@@ -1,0 +1,1 @@
+git@github.com:Ivan-Nekrytov/zakrivayuschiy-teg-f.git
