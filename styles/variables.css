@@ -1,6 +1,6 @@
 :root {
-  --main-font: Inter-Variable;
-  --accent-font: Press-Start2P;
+  --main-font: Inter-Variable, sans-serif;
+  --accent-font: Press-Start2P, fantasy, sans-serif;
   --content-font-weight: 400;
   --header-font-weight: 700;
   --accent-color: #000000;

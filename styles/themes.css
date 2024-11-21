@@ -16,7 +16,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-dark {
+  :root {
     --accent-color: #00cc14;
     --background-color: #000000;
     --content-font-weight: 400;
@@ -36,10 +36,11 @@
   --background-grid-color: #d3d3d3;
   --background-gradient-top-color: #e7e7e7;
   --background-gradient-bottom-color: #1a1a1a;
+  --heart-contour-color: #000000;
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-light {
+  :root {
     --accent-color: #000000;
     --background-color: #ffffff;
     --content-font-weight: 465;
@@ -47,5 +48,6 @@
     --background-grid-color: #d3d3d3;
     --background-gradient-top-color: #e7e7e7;
     --background-gradient-bottom-color: #1a1a1a;
+    --heart-contour-color: #000000;
   }
 }
