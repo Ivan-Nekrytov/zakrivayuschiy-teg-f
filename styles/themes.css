@@ -12,7 +12,8 @@
   --background-grid-color: #000;
   --background-gradient-top-color: #007f0c;
   --background-gradient-bottom-color: #004306;
-  --heart-contour-color: #00cc14;
+  --heart-contour-color: #00cc14;  
+  --button-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +26,7 @@
     --background-gradient-top-color: #007f0c;
     --background-gradient-bottom-color: #004306;
     --heart-contour-color: #00cc14;
+    --button-color: #00cc14;
   }
 }
 
@@ -37,6 +39,7 @@
   --background-gradient-top-color: #e7e7e7;
   --background-gradient-bottom-color: #1a1a1a;
   --heart-contour-color: #000000;
+  --button-color: #ffffff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -49,5 +52,6 @@
     --background-gradient-top-color: #e7e7e7;
     --background-gradient-bottom-color: #1a1a1a;
     --heart-contour-color: #000000;
+    --button-color: #ffffff;
   }
 }

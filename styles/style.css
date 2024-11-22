@@ -208,7 +208,7 @@ main {
     0 -1px var(--background-color);
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 13px;
   z-index: 1;
 }
 
@@ -234,6 +234,7 @@ main {
 .card__like-button {
   width: 130px;
   height: 38px;
+  margin-left: 7px;
 }
 
 .button {
@@ -242,17 +243,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  background-color: var(--background-color);
   box-shadow: 0 0 0 0 var(--accent-color);
-  color: var(--accent-color);
+  color: var(--button-color);
   transition: box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
   z-index: 0;
 }
 
-button:focus-visible ,
-.card__icon-button:focus-visible ~ .card__like-button {
+.button:focus-visible  {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
+}
+
+.card__icon-button:focus-visible {
+  outline: var(--accent-color) 2px solid;
 }
 
 .button::before {
@@ -261,7 +265,7 @@ button:focus-visible ,
   height: 100%;
   left: 0px;
   top: 0px;
-  background-color: var(--accent-color);
+  background-color: var(--button-color);
   transform-origin: 0px;
   width: 0;
   z-index: 1;
@@ -283,15 +287,17 @@ button:focus-visible ,
   height: fit-content;
   position: relative;
   z-index: 2;
+  mix-blend-mode: difference;
 }
-
+/*
 .button:hover {
   color: var(--background-color);
 }
-
+*/
 .card__icon-button {
   background-color: transparent;
   padding: 0;
+  height: 34px;
   border: none;
   outline: none;
 }
@@ -328,8 +334,6 @@ button:focus-visible ,
 .like-icon {
   width: 39px;
   height: 36px;
-  margin-right: 7px;
-  margin-top: 4px;
 }
 
 /* HOVER */
@@ -433,6 +437,7 @@ button:focus-visible ,
   z-index: 2;
   width: 28px;
   height: 28px;
+  mix-blend-mode: difference;
 }
 
 .dialog {
@@ -483,6 +488,7 @@ button:focus-visible ,
 .dialog__close-button {
   padding: 10.5px 0;
   display: block;
+  margin: auto;
   margin-top: 30px;
   background-color: transparent;
   border: 2px var(--accent-color) solid;
@@ -524,5 +530,9 @@ button:focus-visible ,
 
   .dialog__close-button {
     width: 293px;
+  }
+
+  .image-label {
+  right: 25px;
   }
 }
