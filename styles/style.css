@@ -250,7 +250,7 @@ main {
   z-index: 0;
 }
 
-.button:focus-visible  {
+.button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
