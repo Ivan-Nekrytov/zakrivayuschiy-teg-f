@@ -355,7 +355,7 @@ main {
 }
 
 .like-icon:hover .main-body {
-  fill: var(--heart-contour-color);  
+  fill: var(--heart-contour-color);
   transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
@@ -369,7 +369,7 @@ main {
 
 .like-icon:active .main-body {
   fill: var(--heart-sparkles-color);
-  transition: fill 0.3s linear;  
+  transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
 
@@ -382,12 +382,11 @@ main {
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-sparkles-color);
-  transition: fill 0.3s linear;  
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear;transition-delay: 0.05s;
 }
 
 .contour {
-  fill: var(--heart-contour-color);  
+  fill: var(--heart-contour-color);
   transition: fill 0.3s linear;
   transition-delay: 0.06s;
 }
@@ -401,7 +400,7 @@ main {
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-is-liked 0.3s linear;  
+  animation: heart-is-liked 0.3s linear;
   animation-delay: 0.1s;
 }
 
