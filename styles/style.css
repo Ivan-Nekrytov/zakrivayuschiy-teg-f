@@ -444,6 +444,7 @@ main {
   z-index: 2;
   width: 28px;
   height: 28px;
+  color: var(--button-color);
   mix-blend-mode: difference;
 }
 
